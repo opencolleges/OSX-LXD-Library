@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+    div {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .native-content-wrapper .native-content-subtopic {
+      position: relative;
+    }
+
+    .content-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media only screen and (min-width: 64.063em) {
+      .content-container {
+        min-width: 50rem;
+      }
+    }
+
+    @media only screen and (min-width: 64.063em) and (max-width: 90.063em) {
+      .content-container {
+        max-width: 60%;
+      }
+    }
+
+    .mgn-tb20 {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .native-content-wrapper {
+      padding-right: 0;
+    }
+
+    .masthead-img-wrapper {
+      background-repeat: no-repeat;
+      background-size: 280px;
+      background-position: top 60px right 0;
+      padding-top: 70px;
+    }
+
+    .masthead-img-wrapper.native-content-main-div.ng-scope {
+      overflow-x: hidden;
+    }
+
+    @media only screen and (min-width: 40.063em) {
+      .content-section-bottom {
+        margin-bottom: 200px;
+      }
+    }
+
+    .os-main-page-container {
+      min-height: 100%;
+    }
+
+    .position-relative {
+      position: relative;
+    }
+
+    html {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background-color: #222222;
+      font-family: 'Open Sans' sans-serif;
+      font-weight: 400;
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 0.9375rem;
+      vertical-align: baseline;
+      line-height: 1.75rem;
+      background-color: #f9f8f8;
+      color: #222;
+      font-family: 'Open Sans', sans-serif !important;
+      font-weight: normal;
+      text-rendering: optimizeLegibility;
+      height: 100%;
+      background: #f9f8f8;
+      font-style: normal;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    }
+
+    @media only screen and (min-width: 641px) {
+      .pd-enhanced {
+        width: calc(100% + 30px);
+      }
+    }
+
+    .pd-component.pd-container.pd-enhanced {
+      margin-bottom: 1.25rem;
+    }
+
+    .pd-component.pd-container.pd-enhanced:before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .pd-component.pd-container.pd-enhanced:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    :selection {
+      background-color: rgba(17, 160, 173, .13);
+    }
+
+    .pd-excerpt.pd-container {
+      position: relative;
+    }
+
+    .pd-excerpt.pd-container:before {
+      display: none;
+    }
+
+    @media only screen and (min-width: 641px) {
+      .pd-excerpt.pd-container:before {
+        content: '\e046';
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: -48px;
+        left: -3rem;
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        color: #068e45;
+        font-family: 'Open Sans' sans-serif !important;
+        font-size: 1.1875rem;
+        text-align: center;
+        line-height: 3rem;
+      }
+    }
+
+    @media only screen and (min-width: 641px) {
+      .pd-excerpt.pd-container.pd-transitionable.pd-active:before {
+        opacity: 1;
+        left: -48px;
+        left: -3rem;
+      }
+    }
+
+    .pd-excerpt.pd-container:after {
+      display: none;
+    }
+
+    @media only screen and (min-width: 641px) {
+      .pd-excerpt.pd-container:after {
+        content: '\e02e';
+        z-index: -1;
+        opacity: 1;
+        position: absolute;
+        right: -48px;
+        right: -3rem;
+        bottom: 0;
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        color: #068e45;
+        font-family: 'Open Sans', sans-serif !important;
+        font-size: 1.1875rem;
+        text-align: center;
+        line-height: 3rem;
+      }
+    }
+
+    @media only screen and (min-width: 641px) {
+      .pd-excerpt.pd-container.pd-transitionable.pd-active:after {
+        opacity: 1;
+        right: -48px;
+        right: -3rem;
+      }
+    }
+
+    .pd-component.pd-container.pd-enhanced :selection {
+      background: #c8e5e8;
+    }
+
+    .pd-excerpt.pd-content {
+      z-index: 1;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 1.5rem;
+      border-radius: .0625rem;
+      box-shadow: 0.875rem 1.625rem 1.75rem -0.875rem rgba(96, 36, 14, 0.08);
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      background: #fff;
+      color: rgba(38, 38, 38, 0.89);
+    }
+
+    p {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 0.9375rem;
+      vertical-align: baseline;
+      font-family: inherit;
+      font-weight: normal;
+      line-height: 1.875rem;
+      margin-bottom: 0.9375rem;
+      text-rendering: optimizeLegibility;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      line-height: 1.75rem;
+    }
+
+    /* This controls the line between text elements */
+    .pd-excerpt.pd-copyright.pd-btn {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      border-top-color: rgba(51, 51, 51, 0.1);
+      border-top-style: solid;
+      border-top-width: .1025rem;
+      margin-top: 1.5rem;
+    }
+
+    h6 {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 1rem;
+      vertical-align: baseline;
+      font-family: 'Open Sans', sans-serif !important;
+      font-weight: normal;
+      font-style: normal;
+      color: #222222;
+      text-rendering: optimizeLegibility;
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    @media only screen and (min-width: 40.063em) {
+      h6 {
+        line-height: 1.4;
+        font-size: 1rem;
+      }
+    }
+
+    h6 {
+      font-weight: normal;
+      font-family: 'Open Sans' sans-serif !important;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      line-height: 1.875rem;
+    }
+
+    .pd-excerpt.pd-copyright.pd-btn h6 {
+      margin: 0;
+      color: #b9bebf;
+      font-size: .625rem;
+      line-height: 1.5rem;
+    }
+
+    .pd-excerpt.pd-copyright.pd-statement {
+      display: none;
+    }
+
+    .pd-excerpt.pd-copyright.pd-statement p {
+      margin: 0;
+      color: #b9bebf;
+      font-size: .5625rem;
+      line-height: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pd-component pd-container pd-enhanced snipcss-7qq5n snip-div">
+    <div class="pd-excerpt pd-container pd-transitionable pd-active snip-div">
+      <div class="pd-excerpt pd-content snip-div">
+        <p class="node137473819p10 annotation-relative-pos snip-p" id="p10">
+          "How much the customer is willing to pay for the product has very little to do with cost and has very much to do with how much they value the product or service they’re buying."
+        </p>
+        <div class="pd-excerpt pd-copyright pd-btn pd-active snip-div">
+          <h6 class="snip-h6">
+            Eric Dolansky&nbsp;
+          </h6>
+          <div class="pd-excerpt pd-copyright pd-statement snip-div" style="display: block;">
+            <p class="node137473819p11 annotation-relative-pos snip-p" id="p11">
+              (Associate Professor of Marketing, Brock University)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
