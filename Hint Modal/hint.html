@@ -3,214 +3,153 @@
 
 <head>
 <style>
-  tr:hover {
-  background-color: #79B35D;
-}
+  <p class="editor-only">[CSS/JS - don't delete]</p>
 
-/*Controls responsive video*/
-.video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+  
+  .editor-only {
+    display:none;
+ }
 
-/*Control unordered lists styling*/
-ul {
-  margin-left: -10px;
-  list-style-position: outside;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-}
+  #content-view .editor-only, #task-view 
 
-/*Control ordered lists styling*/
-ol {
-  margin-left: -10px;
-  list-style-position: outside;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
+  .editor-only {
+    display:block;
+  }
+  
+  body {
+    margin: 20px;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+  }
 
-/*Control individual bullet point styling*/
-li {
-  padding-left: 10px;
-}
+  h3 {
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+  }
 
-.open-sans-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font size: 40px;
-  line-height: 60px;
-}
+  h4 {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: #056878;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  }
 
-.open-sans-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font size: 32px;
-  line-height: 52px;
-}
+  /*Control hyperlink styling*/
+  a {
+    font: inherit;
+    line-height: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+  }
 
-.open-sans-h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font size: 28px;
-  line-height: 48px;
-}
+  /*Control unordered lists styling*/
+  ul {
+    margin-left: -10px;
+    list-style-position: outside;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
-.open-sans-h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font size: 24px;
-  line-height: 44px;
-}
+  /*Control ordered lists styling*/
+  ol {
+    margin-left: -10px;
+    list-style-position: outside;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
 
-.open-sans-h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font size: 20px;
-  line-height: 40px;
-}
+  /*Control individual bullet point styling*/
+  li {
+    padding-left: 10px;
+  }
 
-.open-sans-h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font size: 16px;
-  line-height: 28px;
-}
+  .hint-button {
+    float: right !important;
+    margin-top: -20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #056878;
+    border: 2px solid #056878;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+  }
 
-/*Control body styling*/
-.open-sans-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font size: 16px;
-  line-height: 28px;
-}
+  .hint-button:hover,
+  .hint-button:focus {
+    background-color: white;
+    color: #056878;
+    cursor: pointer;
+  }
 
-/*Control hyperlink styling*/
-.open-sans-link {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font size: 15px;
-  line-height: 28px;
-  text-decoration: underline;
-  color: #056878;
-}
+  .hint-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
 
-/*Control block border styling*/
-.block-border {
-  border-style: solid;
-  border-width: 2.5px;
-  border-radius: 30px;
-  border-color: #f2f2f2;
-  background-color: #f2f2f2;
-  box-shadow: 0px 20px 75px #9c9c9c;
-}
+  .hint-modal-content {
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+    margin: 20% auto;
+    /* 15% from the top and centered */
+    padding: 50px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 30px;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+  }
 
-/*Control spacing inside border*/
-.block-inner-border {
-  margin: 30px 30px 40px 30px;
-}
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
-.block-inner-border-no-content {
-  margin: 30px 30px 30px 30px;
-}
-
-/*Control block icon styling, especially positioning*/
-.block-icon {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/*Controls block title styling (h1)*/
-.block-title-text {
-  margin-left: 15px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-/*Controls block number identifier styling (h2)*/
-.block-title-number {
-  margin-left: 15px;
-  margin-top: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.block-h3-text {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  vertical-align: baseline;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-}
-
-.block-h4-text {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  color: #056878;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-/*Controls colour of Activity font*/
-.os-color-pink {
-  color: #EB4969;
-}
-
-/*Controls colour of resource font*/
-.os-color-green {
-  color: #08AB4D;
-}
-
-/*Controls colour of Quote font*/
-.os-color-shiny-shamrock {
-  color: #4EA07D;
-}
-
-/*Controls colour of Reading font*/
-.os-color-purple {
-  color: #8143BF;
-}
-
-/*Controls colour of Self-Check font*/
-.os-color-red {
-  color: #FF4B1A;
-}
-
-/*Controls colour of Practice font*/
-.os-color-orange {
-  color: #D67900;
-}
-
-/*Controls colour of Assessment Tips font*/
-.os-color-aqua {
-  color: #15A87D;
-}
-
-/*Controls colour of Research font*/
-.os-color-dark-blue {
-  color: #2348cc;
-}
-
-/*Controls colour of Reflection font*/
-.os-color-brown {
-  color: #9E734F;
-}
-
-/*Controls colour of block number identifier*/
-.os-color-grey {
-  color: #7E828F;
-}
+  .close:hover,
+  .close:focus {
+    color: black;
+    cursor: pointer;
+  }
+</style>
 </style>
   
 </head>
