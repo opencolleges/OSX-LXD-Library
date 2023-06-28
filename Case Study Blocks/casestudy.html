@@ -1,0 +1,260 @@
+<DOCTYPE !html>
+  <html>
+
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+      tr:hover {
+        background-color: #79B35D;
+      }
+
+      /*Controls responsive video*/
+      .video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 10px;
+      }
+
+      /*Control unordered lists styling*/
+      ul {
+        margin-left: -10px;
+        list-style-position: outside;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      /*Control ordered lists styling*/
+      ol {
+        margin-left: -10px;
+        list-style-position: outside;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      /*Control individual bullet point styling*/
+      li {
+        padding-left: 10px;
+      }
+
+      .open-sans-h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font size: 40px;
+        line-height: 60px;
+      }
+
+      .open-sans-h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font size: 32px;
+        line-height: 52px;
+      }
+
+      .open-sans-h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font size: 28px;
+        line-height: 48px;
+      }
+
+      .open-sans-h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font size: 24px;
+        line-height: 44px;
+      }
+
+      .open-sans-h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font size: 20px;
+        line-height: 40px;
+      }
+
+      .open-sans-h6 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font size: 16px;
+        line-height: 28px;
+      }
+
+      /*Control body styling*/
+      .open-sans-body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font size: 16px;
+        line-height: 28px;
+      }
+
+      /*Control hyperlink styling*/
+      .open-sans-link {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font size: 15px;
+        line-height: 28px;
+        text-decoration: underline;
+        color: #056878;
+      }
+
+      /*Control block border styling*/
+      .block-border {
+        border-style: solid;
+        border-width: 2.5px;
+        border-radius: 30px;
+        border-color: #f2f2f2;
+        background-color: #f2f2f2;
+        box-shadow: 0px 20px 75px #9c9c9c;
+      }
+
+      /*Control spacing inside border*/
+      .block-inner-border {
+        margin: 30px 30px 40px 30px;
+      }
+
+      .block-inner-border-no-content {
+        margin: 30px 30px 30px 30px;
+      }
+
+      /*Control block icon styling, especially positioning*/
+      .block-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      /*Controls block title styling (h1)*/
+      .block-title-text {
+        margin-left: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      /*Controls block number identifier styling (h2)*/
+      .block-title-number {
+        margin-left: 15px;
+        margin-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      .block-h3-text {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        vertical-align: baseline;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+      }
+
+      .block-h4-text {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        color: #056878;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      /*Controls colour of Activity font*/
+      .os-color-pink {
+        color: #EB4969;
+      }
+
+      /*Controls colour of resource font*/
+      .os-color-green {
+        color: #08AB4D;
+      }
+
+      /*Controls colour of Quote font*/
+      .os-color-shiny-shamrock {
+        color: #4EA07D;
+      }
+
+      /*Controls colour of Reading font*/
+      .os-color-purple {
+        color: #8143BF;
+      }
+
+      /*Controls colour of Self-Check font*/
+      .os-color-red {
+        color: #FF4B1A;
+      }
+
+      /*Controls colour of Practice font*/
+      .os-color-orange {
+        color: #D67900;
+      }
+
+      /*Controls colour of Assessment Tips font*/
+      .os-color-aqua {
+        color: #15A87D;
+      }
+
+      /*Controls colour of Research font*/
+      .os-color-dark-blue {
+        color: #2348cc;
+      }
+
+      /*Controls colour of Reflection font*/
+      .os-color-brown {
+        color: #9E734F;
+      }
+
+      /*Controls colour of block number identifier*/
+      .os-color-grey {
+        color: #7E828F;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="block-border">
+      <div class="block-inner-border">
+        <span>
+          <div class="block-icon">
+            <img src="https://res.cloudinary.com/opencolleges/image/upload/v1604874420/qdp7digdobv6hoi3gkc4.svg" alt="activity" width="100" height="100">
+            <h1 class="block-title-text">CASE STUDY</h1>
+            <h2 class="block-title-number os-color-grey"></h2>
+          </div>
+        </span>
+        <h3 class="block-h3-text">
+          Scenario Activity
+        </h3>
+        <p class="open-sans-body">
+          You and a friend William ‘Billy’ McLaren, a former racing driver, think the economy is about to improve. Billy says now is a great time to begin a prestige motorcar dealership, which he wants to call Ultra Performance Motors.</p>
+        </p>
+        <p class="open-sans-body">
+          Both you and Billy do not have enough cash to buy the Bugatti Veyron or Aston Martin convertibles you want to sell. However, you are a member of a sports car club and know 20 others who would contribute investment finance, but do not have
+          the
+          time to run a business.
+        </p>
+        <p class="open-sans-body">Billy’s accountant mate Basil Weasley says being by yourselves, you would have problems getting a loan from a bank. He also worries about what would happen if either you or Billy could not work. On the positive side, Basil says there are
+          tax
+          advantages to be gained if UMP was created with the right business structure.
+        </p>
+        <p class="open-sans-body">
+          With other potential board members (in a group with other learners) you have to make a decision.
+        </p>
+        <ol>
+          <li>
+            What business structure should UPM be – sole trader, partnership or company?
+          </li>
+          <li>
+            Why?
+          </li>
+        </ol>
+        <img src="https://res.cloudinary.com/opencolleges/image/upload/v1604874319/fbmrfm7bjqgrhfrfqfg7.svg" width="400" class="snip-img">
+      </div>
+    </div>
+  </body>
+
+  </html>
