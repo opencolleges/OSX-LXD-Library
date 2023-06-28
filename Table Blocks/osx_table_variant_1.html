@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <p class="editor-only">[CSS/JS - don't delete]</p>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+    .editor-only {
+      display: none;
+    }
+
+    #content-view .editor-only,
+    #task-view .editor-only {
+      display: block;
+    }
+
+    body {
+      margin: 20px;
+      line-height: 28px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400px;
+      font-size: 16px;
+    }
+
+    h3 {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      vertical-align: baseline;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 25px;
+    }
+
+    h4 {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      color: #056878;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    /*Control hyperlink styling*/
+    a {
+      font: inherit;
+      line-height: inherit;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    /*Control unordered lists styling*/
+    ul {
+      margin-left: -10px;
+      list-style-position: outside;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    /*Control ordered lists styling*/
+    ol {
+      margin-left: -10px;
+      list-style-position: outside;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    /*Control individual bullet point styling*/
+    li {
+      padding-left: 10px;
+    }
+
+    /*Control block border styling*/
+    .block-border {
+      border-style: solid;
+      border-width: 2.5px;
+      border-radius: 30px;
+      border-color: #f2f2f2;
+      background-color: #f2f2f2;
+      box-shadow: 0px 20px 75px #9c9c9c;
+    }
+
+    /*Control spacing inside border*/
+    .block-inner-border {
+      margin: 30px 30px 40px 30px;
+    }
+
+    .block-inner-border-no-content {
+      margin: 30px 30px 30px 30px;
+    }
+
+    /*Control block icon styling, especially positioning*/
+    .block-icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /*Controls block title styling*/
+    .block-title-text {
+      margin-left: 15px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+    }
+
+    /*Controls block number identifier styling*/
+    .block-title-number {
+      margin-left: 15px;
+      margin-top: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .subtopics {
+      width: 100%;
+    }
+
+    .subtopics th {
+      text-align: left;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    .subtopics td {
+      padding-top: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted #333333;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .quote-reference {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+    .table1body {
+      width: 700px;
+      font-family: "Open Sans";
+      text-align: left;
+      border-radius: 20px;
+      background-color: #CDDCD3;
+      padding:10px;
+    }
+
+    .table1td {
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .table1tr {
+      border-bottom: 1px solid #333333;
+    }
+
+    .table1ul {
+      font-size: 14px !important;
+    }
+
+    .table1li {
+      font-size: 14px !important;
+    }
+
+    /*Controls colour of Activity font*/
+    .os-color-pink {
+      color: #EB4969;
+    }
+
+    /*Controls colour of resource font*/
+    .os-color-green {
+      color: #08AB4D;
+    }
+
+    /*Controls colour of Quote font*/
+    .os-color-shiny-shamrock {
+      color: #4EA07D;
+    }
+
+    /*Controls colour of Reading font*/
+    .os-color-purple {
+      color: #8143BF;
+    }
+
+    /*Controls colour of Self-Check font*/
+    .os-color-red {
+      color: #FF4B1A;
+    }
+
+    /*Controls colour of Practice font*/
+    .os-color-orange {
+      color: #D67900;
+    }
+
+    /*Controls colour of Assessment Tips font*/
+    .os-color-aqua {
+      color: #15A87D;
+    }
+
+    /*Controls colour of Research font*/
+    .os-color-dark-blue {
+      color: #2348cc;
+    }
+
+    /*Controls colour of block number identifier*/
+    .os-color-grey {
+      color: #7E828F;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block-border">
+    <div class="block-inner-border">
+      <table class="table1body">
+        <tr class="">
+          <td class="table1td"><b>To be positioned as a leader in sustainability:</b></td>
+          <td class="table1td">
+            <ul class="table1ul">
+              <li class="table1li">Avoid buying products from companies or industries that exploit workers.</li>
+              <li class="table1li">Incorporate sustainable practices and culture into all levels of the organisation, such as in programs, in the food and meals area, and in the office.</li>
+              <li class="table1li">Build capacity in staff by seeking buy-in from all levels of the organisation, such as through training and sharing of ideas.</li>
+              <li class="table1li">Embed sustainability values into job descriptions for new staff.</li>
+              <li class="table1li">Allocate sufficient resources for sustainability activities for staff and children.</li>
+              <li class="table1li">Encourage individual actions to reduce the service’s overall carbon footprint.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="">
+          <td class="table1td"><b>To use sustainability initiatives as business opportunities:</b></td>
+          <td class="table1td">
+            <ul class="table1ul">
+              <li class="table1li">Align the service with an organisation that has already established sustainability credentials.</li>
+              <li class="table1li">Promote the use of sustainable practices and the benefits to children and families.</li>
+              <li class="table1li">Sell excess fruit and vegetables grown by the children to parents for a nominal amount.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="">
+          <td class="table1td"><b>To use sustainability initiatives as business opportunities:</b></td>
+          <td class="table1td">
+            <ul class="table1ul">
+              <li class="table1li">Align the service with an organisation that has already established sustainability credentials.</li>
+              <li class="table1li">Promote the use of sustainable practices and the benefits to children and families.</li>
+              <li class="table1li">Sell excess fruit and vegetables grown by the children to parents for a nominal amount.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="table1td"><b>To ensure sustainability is part of the local community:</b></td>
+          <td class="table1td">
+            <ul class="table1ul">
+              <li class="table1li">Support and get involved in the local community activities for sustainability.</li>
+              <li class="table1li">Educate others on sustainability.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="table1td"><b>To reduce operating costs and ensure growth and profitability:</b></td>
+          <td class="table1td">
+            <ul class="table1ul">
+              <li class="table1li">Reduce, reuse, and recycle materials.</li>
+              <li class="table1li">Incorporate lifecycle analysis into decision-making processes.</li>
+            </ul>
+          </td>
+        </tr>
+        <td class="table1td"><b>To comply with relevant legislation:</b></td>
+        <td class="table1td">
+          <ul class="table1ul">
+            <li class="table1li">Comply with environmental legislation, agreements, and standards at local and national levels.</li>
+            <li class="table1li">Incorporate legal compliance in organisational policies.</li>
+          </ul>
+        </td>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
