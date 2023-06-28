@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <p class="editor-only">[CSS/JS - don't delete]</p>
+
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+    .editor-only {
+      display: none;
+    }
+
+    #content-view .editor-only,
+    #task-view .editor-only {
+      display: block;
+    }
+
+    body {
+      margin: 20px;
+      line-height: 28px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400px;
+      font-size: 16px;
+    }
+
+    h3 {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 1.375rem;
+      color: #222222;
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 1.375rem;
+      color: #222222;
+      margin-top: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 0.9375rem;
+      vertical-align: baseline;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.875rem;
+      margin-bottom: 0.9375rem;
+      text-rendering: optimizeLegibility;
+    }
+
+    table {
+      border-collapse: collapse;
+      padding: 0;
+      border: solid 1px #DDDDDD;
+      margin: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+      border-spacing: 0;
+      background: #FFFFFF;
+      margin-bottom: 1.25rem;
+    }
+
+    td {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .block-border {
+      border-style: solid;
+      border-width: 2.5px;
+      border-radius: 30px;
+      border-color: #f2f2f2;
+      background-color: #f2f2f2;
+      box-shadow: 0px 20px 75px #9c9c9c;
+    }
+
+    /*Control spacing inside border*/
+    .block-inner-border{
+      padding: 30px 30px 40px 40px;
+    }
+
+    .oc-custom-table {
+      background: none;
+      border: none;
+      margin-top: 1.25rem;
+      table-layout: auto;
+      width: 97%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .oc-custom-table tbody tr {
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    }
+
+    .oc-custom-table tbody td {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block-border block-inner-border">
+  <h3 class="snip-h3">
+    Example: Balance Sheet
+  </h3>
+  <p class="" id="">
+    Based on available financial information, let’s project a balance sheet for the forward period of one year using the excel spreadsheet.
+  </p>
+  <div class="" ng-class="" ng-click="">
+    <i class="" ng-class="">
+    </i>
+  </div>
+  <p class="">
+  </p>
+  <p class="" id="">
+    Use the below provided financial data to project the Statement of Financial Position as at 30 June 2020.
+  </p>
+  <div class="" ng-class="" ng-click="">
+    <i class="" ng-class="">
+    </i>
+    <div ng-if="" class="">
+      <i>
+        &nbsp;
+      </i>
+    </div>
+  </div>
+  <p class="">
+  </p>
+  <table border="0" cellpadding="0" cellspacing="0" class="oc-custom-table">
+    <tbody>
+      <tr>
+        <td>
+          <p align="center">
+            Item&nbsp;
+          </p>
+        </td>
+        <td>
+          <p align="center">
+            Amount
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Cash at Bank as at 30 June 2020
+          </p>
+        </td>
+        <td>
+          <p align="right">
+            $325,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Petty Cash
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $1,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            GST Paid (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $22,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            GST Collected (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            -$28,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Debtors/Accounts Receivable
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $145,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Stock
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $32,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Motor Vehicles
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $70,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Accumulated Depreciation of Furniture and Fittings (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            -$20,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Truck
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $40,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Accumulated Truck (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            -$4,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Long term Investment&nbsp; (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $110,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Creditors/Accounts Payable
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $75,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Provision for Long Service Leave (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $45,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Long term Loan&nbsp; (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $40,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Owner's contribution&nbsp; (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $500,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Owner's drawings (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $117,000
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="">
+            Net Profit/Loss (2019-2020)
+          </p>
+        </td>
+        <td>
+          <p align="right" class="">
+            $150,000
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="">
+    &nbsp;
+  </p>
+  <h4 class="">
+    Solution
+  </h4>
+  <p class="">
+    Below is the projected statement of financial position as at 30 June.
+  </p>
+  <p class="">
+  </p>
+  <div class="">
+    <div class="">
+      <table border="0" cellpadding="0" cellspacing="0" class="oc-custom-table" width="605">
+        <tbody>
+          <tr>
+            <td colspan="3">
+              <p class="">
+                Business Name&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p class="">
+                Statement of Financial Position&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p class="">
+                Projected as at&nbsp;30 June 2020&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Current Assets&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Cash at Bank&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;325,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Petty Cash&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;1,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Debtors&nbsp;1&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;145,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Stock&nbsp;2&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;32,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;503,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Non-Current Assets&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Motor Vehicles&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;70,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Less&nbsp;Accumulated Depreciation - Motor Vehicles&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;(20,000)&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;50,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Truck&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;40,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Less&nbsp;Accumulated Depreciation - Truck&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;(4,000)&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;36,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Long term investment&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;110,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Total Assets&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;699,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Current Liabilities&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Creditors&nbsp;3&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;75,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                GST Collected&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;28,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                GST Paid&nbsp;4&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;(22,000)&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Provision for Long Service Leave&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;45,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;126,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Non-Current Liabilities&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Long-term Loan&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;40,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Total Liabilities&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;166,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Net Assets&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;533,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Owners&nbsp;Equity&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Capital&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;500,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Less&nbsp;Drawings&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;(117,000)&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Plus&nbsp;Net Profit&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;150,000&nbsp;&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="">
+                Total Equity&nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;
+              </p>
+            </td>
+            <td>
+              <p align="right" class="">
+                &nbsp;533,000&nbsp;&nbsp;
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
